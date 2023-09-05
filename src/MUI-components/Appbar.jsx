@@ -43,7 +43,7 @@ const Appbar = ({ drawerWidth, showDrawer }) => {
           Abdullah
         </Typography>
 
-        <Avatar src="/imges/Me.jpg" />
+        <Avatar src="/imges/Me.png" />
       </Toolbar>
     </AppBar>
   );
