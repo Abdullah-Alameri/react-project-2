@@ -16,6 +16,7 @@ import {
 } from "@mui/icons-material";
 
 import { useLocation, useNavigate } from "react-router-dom";
+import { pink } from "@mui/material/colors";
 
 const Drawerr = ({
   drawerWidth,
@@ -30,10 +31,10 @@ const Drawerr = ({
   const theme = useTheme();
 
   const myList = [
-    { text: "Home", icon: <Home />, path: "/" },
-    { text: "Create", icon: <Create />, path: "/create" },
-    { text: "Profile", icon: <Person2 />, path: "/profile" },
-    { text: "Settings", icon: <Settings />, path: "/settings" },
+    { text: "Home", icon: <Home sx={{ color: pink[500] }} />, path: "/" },
+    { text: "Create", icon: <Create color="secondary" />, path: "/create" },
+    { text: "Profile", icon: <Person2 color="success" />, path: "/profile" },
+    { text: "Settings", icon: <Settings color="disabled" />, path: "/settings" },
   ];
 
   return (
@@ -109,7 +110,7 @@ const Drawerr = ({
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <Logout />
+              <Logout color="error" />
             </ListItemIcon>
             <ListItemText primary="Logout" />
           </ListItemButton>
